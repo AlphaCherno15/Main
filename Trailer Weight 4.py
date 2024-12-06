@@ -5,9 +5,9 @@ import re
 from tkinter import ttk
 
 # Load data from CSV test expression and eval
-LBfile_path = r"C:\Users\rperon\OneDrive - Trout River Industries\Documents\Documents\CSV LB.csv"
-HYCfile_path = r"C:\Users\rperon\OneDrive - Trout River Industries\Documents\Documents\CSV HYC.csv"
-RIBfile_path = r"C:\Users\rperon\OneDrive - Trout River Industries\Documents\Documents\RIB SPACING LB.csv"
+LBfile_path = r"C:\Users\rperon\CSV LB.csv"
+HYCfile_path = r"C:\Users\rperon\CSV HYC.csv"
+RIBfile_path = r"C:\Users\rperon\RIB SPACING LB.csv"
 CSV_LB = pd.read_csv(LBfile_path)
 CSV_HYC = pd.read_csv(HYCfile_path)
 ribdata = pd.read_csv(RIBfile_path)
