@@ -66,7 +66,58 @@ stages = ['''
 ========
 ''']
 
-word_list = ["aardvark", "baboon", "camel"]
+word_list = [
+    # Nature & Environment
+    "forest", "ocean", "river", "mountain", "desert", "rain", "thunder", "snow", 
+    "volcano", "earthquake", "waterfall", "hurricane", "eclipse", "meadow", "glacier", 
+    "coral", "canyon", "lagoon", "breeze", "sunset", "sunrise", "aurora", "prairie", 
+    "oasis", "valley",
+
+    # Animals
+    "tiger", "eagle", "shark", "dolphin", "elephant", "panda", "penguin", "giraffe", 
+    "koala", "whale", "cheetah", "bear", "wolf", "falcon", "rabbit", "octopus", "snake", 
+    "spider", "frog", "lizard", "horse", "deer", "fox", "hawk", "owl",
+
+    # Colors
+    "red", "blue", "green", "yellow", "purple", "orange", "pink", "brown", "black", 
+    "white", "grey", "cyan", "magenta", "turquoise", "beige", "lavender", "maroon", 
+    "teal", "peach", "amber",
+
+    # Food & Drink
+    "pizza", "burger", "pasta", "steak", "sushi", "taco", "sandwich", "salad", "soup", 
+    "cheese", "chocolate", "coffee", "tea", "juice", "milkshake", "icecream", "cake", 
+    "bread", "honey", "bacon", "avocado", "apple", "banana", "strawberry", "orange",
+
+    # Occupations
+    "doctor", "engineer", "teacher", "artist", "pilot", "farmer", "chef", "musician", 
+    "actor", "scientist", "writer", "architect", "detective", "athlete", "lawyer", 
+    "mechanic", "nurse", "dentist", "photographer", "journalist", 
+
+    # Technology
+    "computer", "phone", "tablet", "keyboard", "mouse", "printer", "camera", "drone", 
+    "robot", "satellite", "wifi", "software", "hardware", "battery", "circuit", 
+    "screen", "sensor", "server", "chip", "gadget", 
+
+    # Travel & Transportation
+    "car", "plane", "boat", "train", "bus", "bicycle", "truck", "helicopter", 
+    "submarine", "scooter", "motorcycle", "ship", "taxi", "jet", "glider", "camper", 
+    "caravan", "cruise", "skateboard", "balloon", 
+
+    # Emotions & Feelings
+    "happy", "sad", "angry", "excited", "scared", "surprised", "lonely", "jealous", 
+    "proud", "confident", "grateful", "nervous", "curious", "calm", "hopeful", "relaxed", 
+    "tense", "shy", "brave", "loving",
+
+    # Miscellaneous
+    "clock", "book", "pen", "map", "star", "candle", "mirror", "key", "chair", 
+    "table", "window", "door", "lamp", "bottle", "basket", "paper", "bag", "coin", 
+    "flag", "ball", "dice", "card", "brush", "paint", "glove", "hat", "scarf", 
+    "boot", "shoes", "cup", "plate", "knife", "fork", "spoon", "towel", "pillow", 
+    "blanket", "curtain", "fan", "rope", "net", "chain", "lock", "helmet", "shirt", 
+    "pants", "skirt", "watch", "ring", "necklace", "earrings", "belt", "wallet", 
+    "umbrella", "binoculars", "compass", "bagpack", "lantern", "radio", "remote", 
+    "brush", "comb", "soap", "shampoo", "mirror", "sunscreen", "clock", "thermometer",
+]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
