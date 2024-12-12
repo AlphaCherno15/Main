@@ -36,32 +36,30 @@ def check_ace(cards):
 player_sum = check_ace(player_cards)
 computer_sum = check_ace(dealer_cards)
 
-while game is True:
-    print(f'Your cards are: {player_cards}, total of {player_sum}')
-    print(f'Computer card is: {dealer_cards[0]}')
-    if player_sum == "Blackjack" or computer_sum =="Blackjack":
-        game = False
-    elif player_sum < 21:
-        extra_card = input("Type 'y' to get another card, type 'n' to pass: ")
-        if extra_card == "y":
-            chosen_card = rd.choice(cards)
-            player_cards.append(chosen_card)
-            player_sum = check_ace(player_cards)
-        else:
-            while computer_sum < 17:
-                chosen_card = rd.choice(cards)
-                dealer_cards.append(chosen_card)
-                computer_sum = check_ace(dealer_cards)
+while input('Do you want to play? ') == "y":
+    while game is True:
+        print(f'Your cards are: {player_cards}, total of {player_sum}')
+        print(f'Computer first card is: {dealer_cards[0]}')
+        if player_sum == "Blackjack" or computer_sum =="Blackjack":
             game = False
             end = check_victory(player_sum, computer_sum)
-    else:
-        while computer_sum < 17:
-            chosen_card = rd.choice(cards)
-            dealer_cards.append(chosen_card)
-            computer_sum = check_ace(dealer_cards)
-        game = False
-        end = check_victory(player_sum, computer_sum)
-# end = check_victory(player_sum, computer_sum)
-print(end)
-print(f'Your cards are: {player_cards}, total of {player_sum}')
-print(f'Computer cards are: {dealer_cards}, total of {computer_sum}')
+        elif player_sum < 21:
+            extra_card = input("Type 'y' to get another card, type 'n' to pass: ")
+            if extra_card == "y":
+                chosen_card = rd.choice(cards)
+                player_cards.append(chosen_card)
+                player_sum = check_ace(player_cards)
+            else:
+                while computer_sum < 17:
+                    chosen_card = rd.choice(cards)
+                    dealer_cards.append(chosen_card)
+                    computer_sum = check_ace(dealer_cards)
+                game = False
+                end = check_victory(player_sum, computer_sum)
+        else:
+            game = False
+            end = check_victory(player_sum, computer_sum)
+    # end = check_victory(player_sum, computer_sum)
+    print(end)
+    print(f'Your cards are: {player_cards}, total of {player_sum}')
+    print(f'Computer cards are: {dealer_cards}, total of {computer_sum}')
