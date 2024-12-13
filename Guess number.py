@@ -55,8 +55,10 @@ while True:
         hint = input("Do you want a hint? 'y' or 'n'")
         if hint == "y":
             if player_guess < number:
+                chances -= 1
                 distance = len(range(player_guess, number))
             else:
+                chances -= 1
                 distance = len(range(number, player_guess))
             print(f'You are {distance} away from the number')
     else:
