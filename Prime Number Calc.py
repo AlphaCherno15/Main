@@ -29,7 +29,9 @@ def calc():
         target -= 1
     max_prime = max(prime_list)
     result_label = tk.Label(root, text=f'The max Prime number in {target_num.get()} numbers is {max_prime}')
-    result_label.grid(row=2, column=1)
+    result_label.grid(row=3, column=0)
+    list_label = tk.Label(root, text=f'The last 5 prime number found where {prime_list}')
+    list_label.grid(row=4, column=0)
 
 target_label = tk.Label(root, text="What is your Target for max Prime?:")
 target_label.grid(row=grid_reference[0], column=grid_reference[1])
